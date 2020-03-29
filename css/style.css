@@ -1,0 +1,107 @@
+* {
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.section-header {
+  color: #0d0d0d;
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.button {
+  border-radius: 5px;
+  background-color: #c70101;
+  border: none;
+}
+.input {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.promo {
+  background: url(../img/main-bg.png) center center no-repeat;
+  background-size: cover;
+  padding-bottom: 93px;
+}
+.promo h1 {
+  margin-top: 91px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.promo h2 {
+  text-align: right;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.promo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 66px;
+}
+.promo__descr-block {
+  width: 25%;
+  text-align: center;
+}
+.promo__descr-block p {
+  margin-top: 15px;
+}
+.promo__footer {
+  text-align: right;
+}
+.promo__footer p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+.promo__footer a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.promo-button {
+  margin-top: 60px;
+  padding: 15px 43px 13px 43px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header__logo {
+  margin-top: 24px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__offical {
+  margin-top: 28px;
+  text-align: right;
+  font-size: 12px;
+}
+.header__offical span {
+  display: block;
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.header__tel {
+  margin-top: 21px;
+}
+.header__tel a {
+  font-size: 18px;
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.header__tel .header-button {
+  margin-top: 3px;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
