@@ -4,9 +4,9 @@
   color: #ffffff;
 }
 .section-header {
+  text-align: center;
   color: #0d0d0d;
   font-family: "Museo Sans Cyrl -700", sans-serif;
-  font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -14,10 +14,38 @@
   border-radius: 5px;
   background-color: #c70101;
   border: none;
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #fff;
+  color: #c70101;
+  font-weight: 900;
+}
+.button:active,
+.button:focus {
+  outline: none;
 }
 .input {
-  border-radius: 5px;
   background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 20px 10px 15px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+}
+.input:focus {
+  outline: none;
+}
+.input:nth-child(3) {
+  margin-bottom: 20px;
+}
+.feed-button {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 0;
 }
 .promo {
   background: url(../img/main-bg.png) center center no-repeat;
@@ -29,7 +57,6 @@
   margin-bottom: 15px;
   text-align: right;
   font-family: "Museo Sans Cyrl -700", sans-serif;
-  font-weight: 700;
   font-size: 42px;
   text-transform: uppercase;
 }
@@ -69,7 +96,8 @@
 }
 .promo-button {
   margin-top: 60px;
-  padding: 15px 43px 13px 43px;
+  width: 300px;
+  height: 50px;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -87,21 +115,106 @@
 .header__offical span {
   display: block;
   font-family: "Museo Sans Cyrl -700", sans-serif;
-  font-weight: 700;
   font-size: 18px;
 }
 .header__tel {
   margin-top: 21px;
+  text-align: center;
 }
 .header__tel a {
   font-size: 18px;
   font-family: "Museo Sans Cyrl -700", sans-serif;
-  font-weight: 700;
   color: #fff;
 }
 .header__tel .header-button {
   margin-top: 3px;
-  padding: 10px 20px;
+  width: 150px;
+  height: 30px;
   font-size: 12px;
   text-transform: uppercase;
+}
+.features-section {
+  padding: 70px 0 80px 0;
+  background-color: #f6f6f6;
+}
+.features-section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 65px;
+}
+.features-section__block {
+  width: 25%;
+  text-align: center;
+  padding: 0 7px 0 10px;
+  min-height: 250px;
+}
+.features-section__block h3 {
+  margin-top: 32px;
+  color: #0d0d0d;
+  font-size: 18px;
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+}
+.features-section__block p {
+  margin-top: 22px;
+  margin-bottom: 0;
+  color: #0d0d0d;
+}
+.features-section__block p span {
+  color: #c70101;
+}
+.consultation {
+  background: url(../img/consultation/bg.png) center center / cover no-repeat;
+  padding: 100px 0 90px 0;
+}
+.consultation-header {
+  font-family: "Museo Sans Cyrl -700", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+.consultation h3 {
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.consultation__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+}
+.carousel {
+  padding: 100px 0;
+}
+.carousel__inner {
+  position: relative;
+  max-width: 750px;
+  height: 580px;
+  margin: 0 auto;
+}
+.carousel__inner img {
+  width: 100%;
+}
+.carousel__inner .slick-prev,
+.carousel__inner .slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -65px;
+  width: 31px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+}
+.carousel__inner .slick-next {
+  left: auto;
+  right: -65px;
 }
