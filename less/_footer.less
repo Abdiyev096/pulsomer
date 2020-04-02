@@ -1,0 +1,48 @@
+.footer{
+    position: relative;
+
+    &-info{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 50px 60px;
+        width: 460px;
+        height: 270px;
+        background-color: #c70101;
+        text-align: center;
+
+        address{
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+
+        a{
+            display: block;
+            margin-top: 35px;
+            font-size: 20px;
+            .bold();
+            color: #fff;
+        }
+    }
+
+    &__social{
+        margin-top: 38px;
+
+        a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15px;
+            border: 2px solid #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            transition: 0.6s all;
+
+            &:hover{
+                border: 2px solid #2f4da0;
+            }
+        }
+    }
+}
