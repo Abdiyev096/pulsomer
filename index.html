@@ -31,7 +31,7 @@
                     <div class="col-lg-3 offset-lg-1 | col-xl-2 offset-xl-2">
                         <div class="header__tel">
                             <a href="#">+7 (499) 922-89-74</a>
-                            <button class="button header-button">заказать звонок</button>
+                            <button data-modal="consultation" class="button header-button">заказать звонок</button>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-5 offset-lg-6 | col-xl-4 offset-xl-7">
                     <div class="promo__footer">
-                        <button class="button promo-button">заказать консультацию</button>
+                        <button data-modal="consultation" class="button promo-button">заказать консультацию</button>
                         <p>или <a href="#">Перейти в каталог</a></p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                             <input class="input" required type="text" placeholder="Ваше имя">
                             <input class="input" required type="email" placeholder="Ваше email">
                             <input class="input" required type="number" placeholder="Ваш телефон">
-                            <button class="button feed-button">Заказать консультацию</button>
+                            <button data-modal="request" class="button feed-button">Заказать консультацию</button>
                         </form>
                     </div>
                 </div>
@@ -493,6 +493,38 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup">
+        <div class="popup__content" id="consultation">
+            <button class="popup__close">&times;</button>
+            <h3 class="popup__header">Просто заполните форму заявки</h3>
+            <p class="popup__subtitle">и мы перезвоним вам в течении 10 минут</p>
+            <form action="#" class="feed-form">
+                <input class="input" required type="text" placeholder="Ваше имя">
+                <input class="input" required type="email" placeholder="Ваше email">
+                <input class="input" required type="number" placeholder="Ваш телефон">
+                <button class="button feed-button">Заказать консультацию</button>
+            </form>
+        </div>
+        
+        <div class="popup__content" id="order">
+            <button class="popup__close">&times;</button>
+            <h3 class="popup__header">Ваш заказ:</h3>
+            <p class="popup__subtitle">Пульсометр Polar FT1</p>
+            <form action="#" class="feed-form">
+                <input class="input" required type="text" placeholder="Ваше имя">
+                <input class="input" required type="email" placeholder="Ваше email">
+                <input class="input" required type="number" placeholder="Ваш телефон">
+                <button class="button feed-button">Купить</button>
+            </form>
+        </div>
+        
+        <div class="popup__content popup__content_mini" id="request">
+            <button class="popup__close">&times;</button>
+            <h3 class="popup__header">Спасибо за вашу заявку!</h3>
+            <p class="popup__subtitle">Наш менеджер свяжется с вами в ближайшее время!</p>
+        </div>
+    </div>
 
 
 

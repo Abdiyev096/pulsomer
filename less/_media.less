@@ -179,6 +179,16 @@
 
         &__inner{
             height: 380px;
+
+            .slick-prev, .slick-next{
+                z-index: 9;
+            }
+        }
+    }
+
+    .catalog__tab{
+        div{
+            font-size: 14px;
         }
     }
 
@@ -198,4 +208,158 @@
         align-items: center;
     }
 
+    .footer{
+
+        &-info{
+            width: 420px;
+        }
+    }
+
   }
+
+  @media (max-width: 575.98px) { 
+
+    .promo{
+
+        h1{
+            font-size: 23px;
+        }
+
+        h2{
+            font-size: 12px;
+        }
+
+        &-wrapper{
+            padding: 0 5px;
+        }
+
+        &__descr-block p{
+            font-size: 9px;
+        }
+
+        &-button{
+            width: 80%;
+            height: 45px;
+        }
+    }
+
+    .section-header{
+        font-size: 22px;
+    }
+
+    .features-section{
+
+        &__block h3{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__block{
+            width: 50%;
+            min-height: 170px;
+        }
+    }
+
+    .consultation{
+        h3{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        &-header{
+            font-size: 13px;
+            text-align: center;
+            line-height: 23px;
+        }
+
+        &__block{
+            margin: 0 auto;
+            max-width: 250px;
+        }
+    }
+
+    .carousel{
+        padding: 90px 0;
+
+        &__inner{
+            height: 240px;
+
+            img{
+                width: 75%;
+            }
+
+            .slick-prev, .slick-next {
+                z-index: 9;
+                top: 28%;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .slick-prev{
+               left: -1px;
+            }
+
+            .slick-next{
+                right: -1px;
+            }
+        }
+    }
+
+    .catalog-item__content{
+        padding-right: 20px;
+
+        &_active{
+            padding-right: 0;
+        }
+    }
+
+    .catalog-item__list_active li{
+        font-size: 13px;
+    }
+
+    .catalog__tab {
+        width: 100px;
+        height: 40px;
+
+        div{
+            font-size: 9px;
+            line-height: 35px;
+        }
+    }
+
+    .feedback{
+
+        &-block{
+            text-align: center;
+            flex-direction: column;
+
+            &__img{
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .footer{
+
+        &-info{
+            width: 300px;
+
+        }
+
+        &__social{
+            a{
+                margin: 0px 5px;
+            }
+        }
+    }
+
+   }

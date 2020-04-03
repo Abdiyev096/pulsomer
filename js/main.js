@@ -24,5 +24,23 @@ $(document).ready(function () {
       $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
       $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
     })
-  })
+  });
+
+  // Modal elements
+  $('[data-modal=consultation]').on('click', function() {
+    $('.popup, #consultation').fadeIn('slow');
+  });
+
+  $('.popup__close').on('click', function() {
+    $('.popup, #consultation, #order, #request').fadeOut('slow');
+  });
+
+  $('.popup').on('click', function () {
+    $('.popup, #consultation, #order, #request').fadeOut('slow');
+  });
+
+  $('.catalog-item__button').on('click', function() {
+    $('.popup, #order').fadeIn('slow');
+  });
+
 });
