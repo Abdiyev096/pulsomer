@@ -35,12 +35,39 @@ $(document).ready(function () {
     $('.popup, #consultation, #order, #request').fadeOut('slow');
   });
 
-  $('.popup').on('click', function () {
-    $('.popup, #consultation, #order, #request').fadeOut('slow');
-  });
-
   $('.catalog-item__button').on('click', function() {
     $('.popup, #order').fadeIn('slow');
+  });
+
+  $('input[name=phone]').mask("+7-(999)-999-9999");
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('#request').fadeIn();
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1000) {
+      $('.up-arrow').fadeIn();
+    } else{
+      $('.up-arrow').fadeOut();
+    }
+  });
+
+  $("a[href^='#']").click(function () {
+    const _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    return false;
   });
 
 });

@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div class="promo">
+    <div id="promo" class="promo">
         <div class="container">
             <header class="header">
                 <div class="row">
@@ -125,9 +125,9 @@
                     и мы перезвоним вам в течении 10 минут</h3>
                     <div class="consultation__block">
                         <form action="#" class="feed-form">
-                            <input class="input" required type="text" placeholder="Ваше имя">
-                            <input class="input" required type="email" placeholder="Ваше email">
-                            <input class="input" required type="number" placeholder="Ваш телефон">
+                            <input class="input" name="name" required type="text" placeholder="Ваше имя">
+                            <input class="input" name="email" required type="email" placeholder="Ваше email">
+                            <input class="input" name="phone" required placeholder="Ваш телефон">
                             <button data-modal="request" class="button feed-button">Заказать консультацию</button>
                         </form>
                     </div>
@@ -500,9 +500,9 @@
             <h3 class="popup__header">Просто заполните форму заявки</h3>
             <p class="popup__subtitle">и мы перезвоним вам в течении 10 минут</p>
             <form action="#" class="feed-form">
-                <input class="input" required type="text" placeholder="Ваше имя">
-                <input class="input" required type="email" placeholder="Ваше email">
-                <input class="input" required type="number" placeholder="Ваш телефон">
+                <input class="input" name="name" required type="text" placeholder="Ваше имя">
+                <input class="input" name="email" required type="email" placeholder="Ваше email">
+                <input class="input" name="phone" required placeholder="Ваш телефон">
                 <button class="button feed-button">Заказать консультацию</button>
             </form>
         </div>
@@ -512,9 +512,9 @@
             <h3 class="popup__header">Ваш заказ:</h3>
             <p class="popup__subtitle">Пульсометр Polar FT1</p>
             <form action="#" class="feed-form">
-                <input class="input" required type="text" placeholder="Ваше имя">
-                <input class="input" required type="email" placeholder="Ваше email">
-                <input class="input" required type="number" placeholder="Ваш телефон">
+                <input class="input" name="name" required type="text" placeholder="Ваше имя">
+                <input class="input" name="email" required type="email" placeholder="Ваше email">
+                <input class="input" name="phone" required placeholder="Ваш телефон">
                 <button class="button feed-button">Купить</button>
             </form>
         </div>
@@ -526,11 +526,16 @@
         </div>
     </div>
 
+    <a href="#promo" class="up-arrow">
+        <img src="icons/chevron-circle-up-solid.svg" alt="up">
+    </a>
+
 
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
